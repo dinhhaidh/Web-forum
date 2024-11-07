@@ -201,6 +201,10 @@ img {
 .nav__link:hover {
     color: var(--first-color);
 }
+.nav__social img:hover{
+    transform: translateY(-.35rem);
+    background: var(--first-color);
+}
 
 .nav__search{
     position: relative;
@@ -214,8 +218,7 @@ img {
     height: 20px;
 }
 .nav__input{
-    /* padding: 5px 10px 8px 40px; */
-    padding: 5px 10px 8px 28.4px;
+    padding: 5px 10px 8px 40px;
     border-radius: 16px;
     background: fixed;
     border: 1px solid #FFFFFF66;
@@ -243,6 +246,7 @@ img {
 }
 .nav__social img{
     width: 26px;
+    transition: transform .3s;
 }
 
 @media screen and (max-width: 1023.98px) {
@@ -522,6 +526,9 @@ img {
 .readings__form{
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
 }
 .readings__arrow{
     position: absolute;
@@ -1375,7 +1382,7 @@ button#pills-home-tab {
 }
 .health__Category p{
     font-weight: 700;
-    color: #0237F5 !important;
+    color: #7150F5 !important;
     margin-bottom: 0px;
     font-size: 12px !important;
 }
@@ -1510,15 +1517,14 @@ button#pills-home-tab {
 /* .footer__main {
     padding-bottom: 2rem;
 } */
-.footer__social-link i{
+.footer__social-link{
     color: #776f63;
     font-size: 32px;
-    transition: .3s;
-    transform: translateY(0);
+    transition: transform .3s, color .3s;
 }
-.footer__social-link i:hover{
+.footer__social-link:hover{
     color: #000;
-    transform: translateY(-.5rem);
+    transform: translateY(-.5rem) !important;
 }   
 .footer__form{
     position: relative;
@@ -1575,7 +1581,13 @@ button#pills-home-tab {
     font-size: 14px;
     font-family: var(--body-font);
     order: 1;
+    transition: transform .3s;
 }
+.footer__copy:hover,
+.footer__contact li:hover{
+    color: #525050;
+}
+
 .footer__copyright {
     display: flex;
     padding-top: 2rem;
@@ -1940,6 +1952,16 @@ i.fas.fa-chevron-down {
     .footer__desc{
         text-align: center;
     }
+    .filter-container .reading__form-select.form-control{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .readings__arrow {
+        right: 3rem;
+    }
+    .featured__article-content {
+        padding: 2rem 0.5rem;
+    }
 }
 
 
@@ -1947,10 +1969,29 @@ i.fas.fa-chevron-down {
     .featured-article__image {
         height: 223px;
      }
+    .featured-article__content {
+        position: absolute;
+        z-index: 1;
+        bottom: 0rem;
+        padding: 0 1rem 0rem 1rem;
+    }
+    .readings__arrow {
+        right: 2.5rem;
+    }
+
 }
 @media screen and (max-width: 380px) {
     .readings__main-content{
         height: 511px !important;
+    }
+}
+@media screen and (max-width: 370px) {
+    .featured-article-main {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .featured-article__img {
+      width: 100%;
     }
 }
 @media screen and (max-width: 330px) {

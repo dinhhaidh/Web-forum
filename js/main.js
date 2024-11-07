@@ -310,12 +310,12 @@ function toggleDropdown(dropdownId, header) {
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
-  duration: 2500,
+  duration: 1200,
   delay: 300,
   // reset: true
 })
 sr.reveal(`.home__data,.readings__list`) 
 sr.reveal(`.newsletter__list,.featured-article-content,.featured__article-content,.footer,.readings-list`,{origin: 'bottom'})
-sr.reveal(`.category__card,.readings-card,.good__book-card,.health__card,.meaningful__message-article,.category-article `, {interval: 100}) 
+sr.reveal(`.readings-card,.good__book-card,.health__card,.meaningful__message-article,.category-article `, {interval: 100}) 
 sr.reveal(`.blog__img,.blog__imag`,{origin: 'right'})
 sr.reveal(`.blog__data`,{origin: 'left'})
