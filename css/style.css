@@ -43,6 +43,7 @@ body {
     background-color: var(--body-color);
     transition: background-color .4s;
     line-height: unset !important;
+    color: unset !important;
 }
 
 input,
@@ -187,7 +188,7 @@ img {
 }
 
 .nav__link:hover {
-    color: var(--first-color);
+    color: #ccc;
 }
 .nav__social img:hover{
     transform: translateY(-.35rem);
@@ -212,10 +213,11 @@ img {
     border: 1px solid #FFFFFF66;
     height: 40px;
     display: none;
+    color: #fff !important;
 }
 
 .nav__input::placeholder{
-    color: #fff;
+    color: #fff !important;
     font-weight: 400;
     font-size: clamp(0.75rem, 0.7171052631578947rem + 0.1644736842105263vw, 0.875rem) !important;
 }
@@ -230,7 +232,7 @@ img {
    display: flex;
    flex-direction: column;
    row-gap: 3rem;
-
+   align-items: center;
 }
 .nav__social img{
     width: 26px;
@@ -595,6 +597,7 @@ button#pills-home-tab {
     z-index: 2;
     position: relative;
     width: 168px;
+    text-align: center;
 }
 
 .newsletter__button:hover{
@@ -792,14 +795,14 @@ button#pills-home-tab {
 }
 
 
-.blog__bg{
+/* .blog__bg{
     position: absolute;
     left: 0;
     bottom: -11rem;
     width: 612px;
     height: 912px;
     z-index: 1;
-}
+} */
 .blog__title{
     font-size: 31px;
     font-family: var(--body-font);
@@ -877,6 +880,13 @@ button#pills-home-tab {
     background-color: #fff;
     border-radius: 18px;
 }
+.category__desc{
+    color: #121212;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--body-font);
+    line-height: 24px;
+}
 .category__title {
     padding-bottom: 1rem;
     color: var(--black-color);
@@ -884,7 +894,13 @@ button#pills-home-tab {
     font-family: var(--body-font);
     font-size: clamp(1.875rem, 1.792763157894737rem + 0.41118421052631576vw, 2.1875rem);
 }
-
+.category__span{
+    color: #4b4a48;
+    font-family: var(--body-font);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17.55px;
+}
 .category__img-1,
 .category__img-2,
 .category__img-3,
@@ -933,6 +949,7 @@ button#pills-home-tab {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
+    margin-bottom: 0.6rem !important;
 }
 .category__content span{
     color: #4b4a47;
@@ -1281,11 +1298,13 @@ button#pills-home-tab {
 }
 
 
-.meaningful__card h5{
+.meaningful__desc{
     font-size: 20px;
     font-weight: 700;
     font-family: var(--body-font);
     color: #F5BF03;
+    display: flex;
+    margin-bottom: 0.75rem;
 }
 .meaningful__message-text,
 .meaningful__message-desc{
@@ -1295,11 +1314,13 @@ button#pills-home-tab {
     font-size: 16px;
     font-weight: 600;
     color: #121212;
+    display: flex;
+    margin-bottom: 0.5rem;
 }
 .meaningful__message-desc{
     font-size: 13px;
     font-weight: 400;
-    color: var(--black-color);
+    color: #4a4947;
 }
 
 /* good__book */
@@ -1329,8 +1350,10 @@ button#pills-home-tab {
 }
 .good__book-white{
     color: #fff !important;
+    font-size: 12px !important;
+    font-weight: 400 !important
 }
-.good__book-content p{
+.good__book-content a{
     color: #fff !important;
     font-weight: 600;
     font-size: 16px;
@@ -1366,7 +1389,7 @@ button#pills-home-tab {
     border: 1.5px solid #FFFFFF;
 }
 .health__content {
-    padding-top: 1.25rem;
+    padding-top: 1rem;
 }
 .health__Category {
     font-size: 12px;
@@ -1382,13 +1405,20 @@ button#pills-home-tab {
     line-height: 24px;
     font-size: 16px;
 }
+.health__desc{
+    color: var(--black-color);
+    font-family: var(--body-font);
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
 .health__Category p{
     font-weight: 700;
     color: #7150F5 !important;
     margin-bottom: 0px;
     font-size: 12px !important;
 }
-.health__Category span{
+.featured-article__span{
     font-weight: 400;
     font-size: 12px;
     color: #667085;
@@ -1781,11 +1811,23 @@ ul.tabs li.active a {
     border-radius: 14px;
 }
 .featured-article__img{
+    border: none !important;
+
+}
+.featured-article__img{
     width: 144px;
     height: 100px;
     background: #ccc;
     border-radius: 6px;
+    border: none !important;
 }
+.featured-article__img img{
+    border: none !important;
+    width: 144px;
+    height: 100px;
+    border-radius: 6px;
+}
+
 .featured-article-main {
     display: flex;
     column-gap: 15px;
@@ -1798,6 +1840,11 @@ ul.tabs li.active a {
 }
 .purple{
     color: #7150F5 !important;
+}
+.featured-article__purple{
+    color: #7150F5 !important;
+    font-size: 12px;
+    font-weight: 700;
 }
 .featured-article__more{
     padding-top: 2rem;
@@ -2127,6 +2174,9 @@ i.fas.fa-chevron-down {
     .blog__imag {
         width: 450px;
         height: 270px;
+    }
+    .featured-article__content {
+        padding: 0 1.4rem 1.75rem 1.4rem;
     }
 }
 
