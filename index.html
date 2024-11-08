@@ -48,10 +48,10 @@
                     <div class="nav-menu" id="Nav-menu">
                         <ul class="nav-list">
                             <li class="nav-item">
-                                <a href="" class="nav-link">Forum</a>
+                                <a href="" class="nav-link-item">Forum</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Blog</a>
+                                <a href="" class="nav-link-item">Blog</a>
                             </li>
                         </ul>
                         <div class="nav-close" id="nav-close-menu">
@@ -1623,18 +1623,13 @@
                     <div class="readings__main">
                         <ul class="nav nav-tabs readings__tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <button class="nav-link active readings__button" id="tab1-tab" data-bs-toggle="tab"
-                                    href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Chuyên mục 1</button>
+                                <a class="nav-link readings__button" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false" tabindex="-1">Chuyên mục 1</a>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link readings__button" id="tab2-tab" data-bs-toggle="tab" href="#tab2"
-                                    role="tab" aria-controls="tab2" aria-selected="false">Chuyên mục 2
-                                </button>
+                                <a class="nav-link readings__button active" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="true">Chuyên mục 2</a>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link readings__button" id="tab3-tab" data-bs-toggle="tab" href="#tab3"
-                                    role="tab" aria-controls="tab3" aria-selected="false">Chuyên mục 3
-                                </button>
+                                <a class="nav-link readings__button" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false" tabindex="-1">Chuyên mục 3</a>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-link readings__button" id="tab4-tab" data-bs-toggle="tab" href="#tab4"
@@ -3935,29 +3930,8 @@
                                                 </div>
                                             </div>
     
-                                            <div class="featured-article__body">
-                                                <div class="row">
-                                                    <div class="col-12 featured-article-main">
-                                                        <a href="#" class="featured-article__img">
-                                                            <img src="#" alt="">
-                                                        </a>
-                                                        <div class="featured-article__subtitle">
-                                                            <div class="health__Category good__book-subtitle">
-                                                                <a href="#" class="featured-article__purple">
-                                                                    Category
-                                                                    </a>
-                                                                    <a href="#" class="featured-article__span">
-                                                                    - 14 Jan 2023
-                                                                </a>
-                                                            </div>
-                                                            <a href="#" class="featured-article__heading">
-                                                                Auto layout is a constraint-based layout system to create an
-                                                                adaptive UI.
-                                                            </a>
-                                                        </div>
-                                                </div>
-                                            </div>
-    
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
                                             <div class="featured-article__body">
                                                 <div class="row">
                                                     <div class="col-12 featured-article-main">
@@ -3967,9 +3941,9 @@
                                                           <div class="featured-article__subtitle">
                                                             <div class="health__Category good__book-subtitle">
                                                                 <a href="#" class="featured-article__purple">
-                                                                    Category
-                                                                 </a>
-                                                                   <a href="#" class="featured-article__span">
+                                                                   Category
+                                                                </a>
+                                                                <a href="#" class="featured-article__span">
                                                                     - 14 Jan 2023
                                                                 </a>
                                                             </div>
@@ -3981,6 +3955,34 @@
                                                     </div>
                                                 </div>
                                             </div>
+    
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
+                                            <div class="featured-article__body">
+                                                <div class="row">
+                                                    <div class="col-12 featured-article-main">
+                                                        <a href="#"  class="featured-article__img">
+                                                            <img src="#" alt="">
+                                                        </a>
+                                                          <div class="featured-article__subtitle">
+                                                            <div class="health__Category good__book-subtitle">
+                                                                <a href="#" class="featured-article__purple">
+                                                                   Category
+                                                                </a>
+                                                                <a href="#" class="featured-article__span">
+                                                                    - 14 Jan 2023
+                                                                </a>
+                                                            </div>
+                                                            <a href="#" class="featured-article__heading">
+                                                                Auto layout is a constraint-based layout system to create an
+                                                                adaptive UI.
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
                                         </div>
                                     </div>
                                     <a href="#" class="meaningful__message-more featured-article__more"> Xem thêm
@@ -5326,15 +5328,17 @@
                         <i class="ri-arrow-right-s-line"></i>
                     </div>
                 </div>
-
-                <a href="#" class="meaningful__message-more"> Xem thêm
+              
+                <a href="#" class="meaningful__message-more "> Xem thêm
                     <img src="./images/Arrow - Right.svg" alt="">
                 </a>
+                
             </div>
 
+
             <div class="meaningful__message-bg">
-                <!-- <img src="./images/meaningful__message__bg.png" alt=""> -->
             </div>
+
             
         </section>
 

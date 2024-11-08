@@ -124,7 +124,7 @@ let swiperCategory = new Swiper('.category__swiper', {
             rows: 1,
           }
         },
-        920: {
+        950: {
           slidesPerView: 3,
          
         },
