@@ -2,6 +2,15 @@ $(document).ready(function() {
     $('#nav-toggle').click(function(){
         $("#nav-menu").addClass("show-menu");
     })
+
+    $('#nav-toggle-menu').click(function(){
+        $("#Nav-menu").addClass("show-menu-top");
+    })
+
+    $('#nav-close-menu').click(function(){
+        $("#Nav-menu").removeClass("show-menu-top");
+    })
+
     $('#nav-close').click(function(){
         $("#nav-menu").removeClass("show-menu");
     })

@@ -302,15 +302,51 @@ img {
     display: flex;
     /* column-gap: 2rem; */
     column-gap: 1rem;
-    
+    position: relative;
 }
 
 
 
 
 @media screen and (min-width: 1024px) {
+    .nav-menu {
+        display: block;
+        position: fixed;
+        top: 4.7rem;
+        background-color:#FCF6E4;
+        height: 530px;
+        padding: 2rem 0 0 2rem;
+        width: 250px;
+        right:  -100%;
+        transition: right .4s;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 2px 8px rgb(204, 204, 204, 0.8);
+        }
+    }
+    .show-menu-top{
+        right: 7.8rem;
+    }
+    div#nav-close-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1.1rem;
+    }
+    div#nav-close-menu i{
+        font-size: 1.5rem;
+    }
+
     .nav__close{
         display: none;
+    }
+    .nav-item a{
+        color: var(--black-color) !important;
+        font-size: 20px !important;
+        font-family: var(--black-color);
+        font-weight: 600;
+        transition: color .3s;
+    }
+    .nav-item a:hover{
+        color: #878585 !important;
     }
     .nav__login {
         display: none;
@@ -424,7 +460,7 @@ img {
     position: absolute;
     bottom: -17rem;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
 
 
@@ -442,6 +478,9 @@ img {
     width: 100%;
     height: 400px; */
 }
+.nav-menu{
+    display: none;
+}
 .home__title{
     font-size: clamp(2.5rem, 2.335526315789474rem + 0.8223684210526315vw, 3.125rem);
     font-weight: var(--font-semi-bold);
@@ -457,11 +496,14 @@ img {
 .newsletter{
     background-color: #fcf6e4;
     position: relative;
-    z-index: 2;
 }
 .newsletter-main {
     position: relative;
     padding: 3rem 0 1rem;
+}
+.newsletter__list {
+    position: relative;
+    z-index: 4;
 }
 
 .newsletter__img{
@@ -506,7 +548,7 @@ img {
 .newsletter__tabs::after{
    content: "";
    position: absolute;
-   background: #dfd5c3;
+   background: #e1d6c2;
    width: 500px;
    z-index: 1;
    height: 58px;
@@ -869,7 +911,7 @@ button#pills-home-tab {
     background-position: center;
     position: relative;
     z-index: 2;
-    padding: 3rem 0 4rem;
+    padding: 3rem 0 0rem;
 }
 .category__card{
     position: relative;
@@ -916,14 +958,12 @@ button#pills-home-tab {
 .category__img-4:hover{
     transform: translateY(-.5rem);
 }
-.newsletter__list {
-    position: relative;
-    z-index: 2;
-}
+
 .category__img-1{
     left: 1rem;
     width: 104px;
     height: 144px;
+    object-fit: cover;
 }
 .category__img-2{
     left: 0.7rem;
@@ -938,7 +978,7 @@ button#pills-home-tab {
 }
 .category__article{
     /* height: 400px; */
-    padding-top: 6rem;
+    padding-top: 7rem;
 }
 .category__list{
     position: relative;
@@ -965,6 +1005,7 @@ button#pills-home-tab {
 }
 .category__list{
     position: relative;
+    z-index: 3;
 }
 
 .category__swiper {
@@ -1076,6 +1117,21 @@ button#pills-home-tab {
 }
 .category {
     color: #6c757d;
+    position: relative;
+}
+.category__bg {
+    position: absolute;
+    top: -21rem;
+    height: 612px;
+    right: 1rem;
+    z-index: 1;
+}
+.readings__container.container {
+    position: relative;
+    z-index: 3;
+}
+.category__container.container {
+    padding-bottom: 3.5rem;
 }
 .date {
     font-size: 12px;
@@ -1103,6 +1159,7 @@ button#pills-home-tab {
     font-size: 20px;
     font-weight: 600;
     font-family: var(--body-font);
+    color: var(--black-color);
 }
 .readings .nav-tabs .nav-link {
     margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
@@ -1218,7 +1275,13 @@ button#pills-home-tab {
     font-size: 50px;
     font-weight: 600;
     font-family: var(--body-font);
-   
+   color: var(--black-color);
+}
+.readings-unique h5{
+    font-weight: 500;
+    font-family: var(--body-font);
+   color: #4a4844;
+   font-size: 20px !important;
 }
 
 .meaningful__message{
@@ -1233,20 +1296,24 @@ button#pills-home-tab {
 
 }
 
-/* .meaningful__message-bg img{
+.meaningful__message-bg {
     background-size: cover;
     position: absolute;
     height: 1164px;
-    width: 612px;
-    rotate: 35deg;
-    top: 1rem;
-    right: 0;
-
-} */
+    width: 1400px;
+    rotate: 20deg;
+    top: 7rem;
+    right: -8rem;
+    background-image: url(../images/meaningful__message__bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 
 .meaningful__message-list{
     position: relative;
     padding: 1.5rem 0 2rem;
+    z-index: 3;
 }
 .meaningful__message-article{
     box-shadow: 0px 10px 24px -4px #1118270A;
@@ -1370,7 +1437,7 @@ button#pills-home-tab {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fcf5e0;
-    padding: 2rem 0 2rem;
+    padding: 2rem 0 3rem;
 }
 
 .health__image{
@@ -1460,10 +1527,10 @@ button#pills-home-tab {
 }
 .featured-author{
     padding: 2.5rem 0 5rem;
-    background-image: url(../images/featured-author.png);
+    /* background-image: url(../images/featured-author.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 
@@ -1534,6 +1601,12 @@ button#pills-home-tab {
     height: 72px;
     text-align: center;
     /* margin: 0 auto 1rem; */
+}
+.footer__item{
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 14px;
+
 }
 
 /* .footer__data {
@@ -1609,6 +1682,7 @@ button#pills-home-tab {
 .footer__content {
     display: flex;
     column-gap: 40px;
+    align-items: center;
 }
 .footer__copy{
     font-size: 14px;
@@ -2071,7 +2145,6 @@ i.fas.fa-chevron-down {
     .home__bg {
         bottom: -3.5rem;
         left: 0;
-        z-index: 1;
         width: 100%;
         height: 200px;
     }
@@ -2140,6 +2213,9 @@ i.fas.fa-chevron-down {
         width: 263px;
         height: 400px;
     }
+    .footer__contact{
+        margin-bottom: 0px !important;
+    }
 }
 
 
@@ -2196,7 +2272,30 @@ i.fas.fa-chevron-down {
         height: 320px;
         right: -1rem;
     }
-  
+    .category__img-4 {
+        top: -8.2rem;
+        left: -1.5rem;
+    }
+    .category__img-1, .category__img-2, .category__img-3 {
+        top: -6.5rem;
+    }
+    .category__img-4{
+        left: -2rem;
+    }
+    .category__img-1 {
+        left: 2rem;
+        top: -7rem;
+    }
+    .category__img-3 {
+        top: -7rem;
+        left: 1rem;
+    }
+    .category__img-2 {
+        left: 1rem;
+    }
+    .nav-menu{
+        display: block;
+    }
 }
 @media screen and (min-width: 1050px) {
     .home__bg{

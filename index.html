@@ -45,7 +45,21 @@
                 </ul>
 
                 <div class="nav__login">
-                    <div class="nav__toggle nav__toggle-menu">
+                    <div class="nav-menu" id="Nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Forum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Blog</a>
+                            </li>
+                        </ul>
+                        <div class="nav-close" id="nav-close-menu">
+                            <i class="ri-close-line"></i>
+                        </div>
+                    </div>
+                  
+                    <div class="nav__toggle nav__toggle-menu" id="nav-toggle-menu">
                         <img src="./images/menu-right.svg" alt="">
                     </div>
 
@@ -70,6 +84,7 @@
                     <input type="search" placeholder="Nhập tìm kiếm" class="nav__input nav__form-search">
                     <img src="./images/search.svg" alt="">
                 </form>
+               
                 <div class="nav__toggle" id="nav-toggle">
                     <img src="./images/menu-right.svg" alt="">
                 </div>
@@ -1493,7 +1508,6 @@
 
         </section>
 
-
         <section class="category">
             <div class="category__container container">
                 <h1 class="category__title">
@@ -1596,6 +1610,8 @@
                     </div>
                 </div>
             </div>
+
+            
         </section>
 
         <section class="readings">
@@ -1607,24 +1623,28 @@
                     <div class="readings__main">
                         <ul class="nav nav-tabs readings__tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active readings__button" id="tab1-tab" data-bs-toggle="tab"
-                                    href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Chuyên mục 1</a>
+                                <button class="nav-link active readings__button" id="tab1-tab" data-bs-toggle="tab"
+                                    href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Chuyên mục 1</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link readings__button" id="tab2-tab" data-bs-toggle="tab" href="#tab2"
-                                    role="tab" aria-controls="tab2" aria-selected="false">Chuyên mục 2</a>
+                                <button class="nav-link readings__button" id="tab2-tab" data-bs-toggle="tab" href="#tab2"
+                                    role="tab" aria-controls="tab2" aria-selected="false">Chuyên mục 2
+                                </button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link readings__button" id="tab3-tab" data-bs-toggle="tab" href="#tab3"
-                                    role="tab" aria-controls="tab3" aria-selected="false">Chuyên mục 3</a>
+                                <button class="nav-link readings__button" id="tab3-tab" data-bs-toggle="tab" href="#tab3"
+                                    role="tab" aria-controls="tab3" aria-selected="false">Chuyên mục 3
+                                </button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link readings__button" id="tab4-tab" data-bs-toggle="tab" href="#tab4"
-                                    role="tab" aria-controls="tab4" aria-selected="false">Chuyên mục 4</a>
+                                <button class="nav-link readings__button" id="tab4-tab" data-bs-toggle="tab" href="#tab4"
+                                    role="tab" aria-controls="tab4" aria-selected="false">Chuyên mục 4
+                                </button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link readings__button" id="tab4-tab" data-bs-toggle="tab" href="#tab5"
-                                    role="tab" aria-controls="tab4" aria-selected="false">Chuyên mục 5</a>
+                                <button class="nav-link readings__button" id="tab4-tab" data-bs-toggle="tab" href="#tab5"
+                                    role="tab" aria-controls="tab4" aria-selected="false">Chuyên mục 5
+                                </button>
                             </li>
                         </ul>
 
@@ -2950,7 +2970,7 @@
 
             <div class="readings-container container-1">
                 <div class="row readings-content">
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-4 col-sm-6 col-lg-3 ">
                         <div class="readings-card">
                             <a href="#" class="readings-fill-1">
                                 <img src="./images/reading-1.svg" alt="">
@@ -2963,7 +2983,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-4 col-sm-6 col-lg-3 ">
                         <div class="readings-card">
                             <a href="#" class="readings-fill-2">
                                 <img src="./images/reading-2.svg" alt="">
@@ -2976,7 +2996,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-4 col-sm-6 col-lg-3 ">
                         <div class="readings-card">
                             <a href="#" class="readings-fill-3">
                                 <img src="./images/reading-3.svg" alt="">
@@ -2989,7 +3009,7 @@
                         </div>
                     </div>
 
-                    <div class=" col-md-3 col-sm-6 ">
+                    <div class="col-md-4 col-sm-6 col-lg-3 ">
                         <div class="readings-card">
                             <a href="#" class="readings-fill-4">
                                 <img src="./images/reading-4.svg" alt="">
@@ -3003,6 +3023,10 @@
                     </div>
 
                 </div>
+            </div>
+
+            <div class="category__bg">
+                <img src="./images/readings__image-bg.png" alt="">
             </div>
         </section>
 
@@ -5308,9 +5332,10 @@
                 </a>
             </div>
 
-            <!-- <div class="meaningful__message-bg">
-                <img src="./images/meaningful__message__bg.png" alt="">
-            </div> -->
+            <div class="meaningful__message-bg">
+                <!-- <img src="./images/meaningful__message__bg.png" alt=""> -->
+            </div>
+            
         </section>
 
         <section class="featured-author">
@@ -5455,10 +5480,14 @@
                 <div class="col-md-6 col-sm-12 col-lg-6 footer-social">
                     <div class="footer__content">
                         <ul class="footer__contact">
-                            <li>Liên hệ</li>
-                            <li>Báo cáo sự cố</li>
+                            <li>
+                                <a href="#" class="footer__item"> Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__item">Báo cáo sự cố</a>
+                            </li>
                         </ul>
-                        <div class="footer__img">
+                        <a href="#" class="footer__img">
                             <img src="./images/footer__copyright.png" alt="">
                         </div>
                     </div>
