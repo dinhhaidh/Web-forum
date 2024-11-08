@@ -4,17 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
     --header-height: 4.6875rem;
-
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    /* --first-color: hsl(140, 40%, 48%);
-    --first-color-alt: hsl(140, 40%, 44%);
-    --title-color: #1d201e;
-    --text-color: hsl(140, 4%, 40%);
-    --text-color-light: hsl(140, 4%, 64%);
-    --container-color: hsl(0, 0%, 95%); */
-
-
+    --blue-color: #007aff;
     --white-color: #fff;
     --yellow-color: #FCF6E4;
     --yellow-colorf5: #F5BF03;
@@ -35,9 +25,6 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
-/* .bg-f5{
-    background-color: #F5BF03 !important;
-} */
 
 /*=============== BASE ===============*/
 * {
@@ -55,6 +42,7 @@ body {
     font-family: var(--body-font) !important;
     background-color: var(--body-color);
     transition: background-color .4s;
+    line-height: unset !important;
 }
 
 input,
@@ -671,10 +659,14 @@ button#pills-home-tab {
     font-weight: 600;
     font-size: 14px;
     font-family: var(--body-font);
-    line-height: 18.9px;
+    line-height: 18.9px !important;
+    color: var(--black-color);
+}
+.tab__list {
+   margin-top: 0.7rem;
 }
 .tabs__main{
-    padding: 1.5rem 1rem 2rem 1rem;
+    padding: 1.5rem 1rem;
     /* padding: 3rem; */
    margin-top: 0px !important;
 }
@@ -692,9 +684,10 @@ button#pills-home-tab {
     font-family: var(--body-font);
     font-size: 12px;
 }
-.tab__description strong{
+.tab__description a{
     color: #7150F5;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: var(--body-font);
 }
 
 .tab__description .Bryan,
@@ -710,6 +703,14 @@ button#pills-home-tab {
     color: #667085;
 
 }
+.swiper.newsletter__swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    padding-bottom: 1rem;
+}
+.swiper-pagination-newsletter.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -1rem;
+    position: relative;
+}
+
 @media screen and (max-width: 535px) {
     .tabs__main {
         border-radius: 0px 0px 20px 20px !important;
@@ -1034,7 +1035,7 @@ button#pills-home-tab {
 }
 .readings-data{
     /* height: 400px; */
-    height: 342px;
+    height: 330px;
     overflow-y: auto;
     width: 100%;
     margin: 0 auto;
@@ -1151,6 +1152,7 @@ button#pills-home-tab {
     font-size: 13px;
     font-weight: 400;
     font-family: var(--body-font);
+    margin-top: 0.5rem;
 }
 .readings-card{
     backdrop-filter: blur(12px);
@@ -1471,10 +1473,11 @@ button#pills-home-tab {
     flex-direction: column;
     row-gap: 8px;
 }
-.featured-author__content h6{
+.featured-author__content a{
     font-size: 18px;
     font-weight: 600;
     font-family: var(--body-font);
+    color: var(--black-color);
 }
 
 
