@@ -19,9 +19,20 @@ $(document).ready(function() {
     })
 
     $(window).scroll(function(){
-        $("#header").toggleClass("shadow-header", $(this).scrollTop() >= 50);
+        // $("#header").toggleClass("shadow-header", $(this).scrollTop() >= 50);
         $("#scroll-up").toggleClass("show-scroll", $(this).scrollTop() >= 350);
     })
+
+    $(document).ready(function() {
+      const $menu = $('#header');
+      $(window).scroll(function() {
+          if ($(window).scrollTop() > 50) {
+              $menu.addClass('scrolled');
+          } else {
+              $menu.removeClass('scrolled');
+          }
+      });
+  });
 })
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
