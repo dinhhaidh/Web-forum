@@ -46,24 +46,6 @@
                 </ul>
 
                 <div class="nav__login">
-                    <div class="nav-menu" id="Nav-menu">
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <a href="" class="nav-link-item">Forum</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link-item">Blog</a>
-                            </li>
-                        </ul>
-                        <div class="nav-close" id="nav-close-menu">
-                            <i class="ri-close-line"></i>
-                        </div>
-                    </div>
-                  
-                    <div class="nav__toggle nav__toggle-menu" id="nav-toggle-menu">
-                        <img src="./images/menu-right.svg" alt="">
-                    </div>
-
                     <div class="nav__social">
                         <a href="#">
                             <img src="./images/bell.svg" alt=""  class="bell">
@@ -95,12 +77,17 @@
                 </div>
 
                 <div class="nav__social">
-                    <img src="./images/bell.svg" alt="" class="bell">
-                    <img src="./images/bell-notification (1).svg" alt="" class="bell-1">
+                    <a href="#">
+                        <img src="./images/bell.svg" alt="" class="bell">
+                        <img src="./images/bell-notification (1).svg" alt="" class="bell-1">
+                    </a>
 
+                    <a href="#">
+                        <img src="./images/user-circle.svg" alt="" class="user-circle">
+                        <img src="./images/user-circle-1.svg" alt="" class="user-circle-1">
+                    </a>
 
-                    <img src="./images/user-circle.svg" alt="" class="user-circle">
-                    <img src="./images/user-circle-1.svg" alt="" class="user-circle-1">
+                    
                 </div>
             </div>
 
@@ -131,16 +118,20 @@
             <div class="newsletter__container container">
                 <div class="newsletter__list">
                     <ul class="nav nav-pills newsletter__tabs" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a href="#" class="nav-link newsletter__button tabs__button active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Thảo luận mới</a>
+                        <li class="nav-item classname__active-1" role="presentation">
+                            <a href="#" class="nav-link newsletter__button tabs__button active button__active-1" id="pills-home-tab active-1" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Thảo luận mới</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="#"  class="nav-link newsletter__button tabs__button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Thảo luận nổi bật</a>
+                        <li class="nav-item classname__active-2" role="presentation">
+                            <a href="#"  class="nav-link newsletter__button tabs__button button__active-2"  id="pills-profile-tab active-2" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Thảo luận nổi bật</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="#"  class="nav-link newsletter__button tabs__button " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Trả lời mới nhất</a>
+                        <li class="nav-item classname__active-3" role="presentation">
+                            <a href="#"  class="nav-link newsletter__button tabs__button button__active-3" id="pills-contact-tab active-3" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Trả lời mới nhất</a>
                         </li>
                     </ul>
+
+                    <!-- <ul class="nav nav-pills newsletter__tabs "></ul>
+                      
+                    </ul> -->
 
                     <div class="tab-content tabs__main" id="pills-tabContent">
                         <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -2680,6 +2671,8 @@
             <div class="newsletter__bg">
 
             </div>
+            <div class="newsletter__right">
+            </div>
 
         </section>
 
@@ -4220,6 +4213,8 @@
             <div class="blog__imag">
                 <img src="./images/blog__image.png" alt="">
             </div>
+            <div class="blog__left-img">
+            </div>
 
             <div class="featured-article__container container">
                 <div class="featured-article-content">
@@ -5033,6 +5028,7 @@
                                 </a>
                             </div>
 
+
                         </div>
                     </div> 
                 </div>
@@ -5185,804 +5181,6 @@
                                     <p>Đây là nội dung của Chuyên mục 5</p>
                                 </div>
                             </form>
-
-                            <!-- <h3 onclick="toggleDropdown('body__data-content-dropdown', this)" class="dropdown-header">Tin tức<i class="fas fa-chevron-down"></i></h3>
-                            <div class="dropdown-content body__data-content-dropdown" style="display: none;">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <a href="#" class="meaningful__message-more featured-article__more meaningful__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div>
-                            <h3 onclick="toggleDropdown('body-data__content-dropdown', this)" class="dropdown-header ">Kinh nghiệm<i class="fas fa-chevron-down"></i> </h3>
-                            <div class="dropdown-content body-data__content-dropdown">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <a href="#" class="meaningful__message-more featured-article__more  meaningful__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div>
-
-                            <h3 onclick="toggleDropdown('body__main-data-dropdown', this)" class="dropdown-header ">Sức khỏe<i class="fas fa-chevron-down"></i></h3>
-                            <div class="dropdown-content body__main-data-dropdown">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <a href="#" class="meaningful__message-more featured-article__more meaningful__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div>
-                            <h3 onclick="toggleDropdown('body__subtitle-dropdown', this)" class="dropdown-header ">Phim ảnh<i class="fas fa-chevron-down"></i></h3>
-                            <div class="dropdown-content body__subtitle-dropdown">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <a href="#" class="meaningful__message-more featured-article__more meaningful__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div>
-
-                            <h3 onclick="toggleDropdown('body__data-dropdown', this)" class="dropdown-header ">Anime<i class="fas fa-chevron-down"></i></h3>
-                            <div class="dropdown-content body__data-dropdown">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <a href="#" class="meaningful__message-more featured-article__more  meaningful__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div>
-
-                            <h3 onclick="toggleDropdown('body__main-dropdown', this)" class="dropdown-header ">Đời sống<i class="fas fa-chevron-down"></i></h3>
-                            <div class="dropdown-content body__main-dropdown">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <a href="#" class="meaningful__message-more featured-article__more  meaningful__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div>
-
-                            <h3 onclick="toggleDropdown('body__content-dropdown', this)" class="dropdown-header ">Showbit<i class="fas fa-chevron-down"></i></h3>
-                            <div class="dropdown-content body__content-dropdown">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <a href="#" class="meaningful__message-more featured-article__more  meaningful__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div>
-
-                            <h3 onclick="toggleDropdown('body__list-dropdown', this)" class="dropdown-header ">Thể thao<i class="fas fa-chevron-down"></i></h3>
-                            <div class="dropdown-content body__list-dropdown">
-                                <div class="row featured-article-list">
-                                    <div class="col-md-6 col-sm-12 col-lg-6">
-                                        <div class="featured-article__main">
-                                            <img src="#" alt="" class="featured-article__image">
-                                            <div class="featured-article__content">
-                                                <div class="health__Category featured-article-subtitle">
-                                                 <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                    <span class="good__book-white">- 14 Jan 2023</span>
-                                                </div>
-                                                  <a href="#" class="featured-article__desc">Auto layout is a constraint-based
-                                                    layout system to create an adaptive UI. Auto layout is a
-                                                    constraint-based layout system...
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-lg-6 featured-article-card">
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="featured-article__body">
-                                            <div class="row">
-                                                <div class="col-12 featured-article-main">
-                                                    <a href="#"  class="featured-article__img">
-                                                        <img src="#" alt="">
-                                                    </a>
-                                                    <div class="featured-article__subtitle">
-                                                        <div class="health__Category good__book-subtitle">
-                                                         <a href="#" class="featured-article__purple">
-                                                               Category
-                                                            </a>
-                                                               <a href="#" class="featured-article__span">
-                                                                - 14 Jan 2023
-                                                            </a>
-                                                        </div>
-                                                         <a href="#" class="featured-article__heading">
-                                                            Auto layout is a constraint-based layout system to create an
-                                                            adaptive UI.
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <a href="#" class="meaningful__message-more featured-article__more"> Xem thêm
-                                    <img src="./images/Arrow - Right.svg" alt="">
-                                </a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -5991,9 +5189,8 @@
             <div class="featured-article-container container">
 
 
-            <!-- <div class="blog__bg">
-                <img src="./images/blog__bg.png" alt="">
-            </div> -->
+            
+
 
         </section>
 
@@ -6520,6 +5717,16 @@
                 <img src="./images/meaningful__message__bg.png" alt="">
             </div>
 
+            <div class="meaningful__message__bg">
+                <img src="./images/meaningful__message-1.png" alt="">
+            </div>
+
+            <div class="meaningfull__message__bg"></div>
+
+
+            <div class="meaningful__message__bottom">
+                <img src="./images/bottom.png" alt="">
+            </div>
            
 
         </section>
@@ -6612,6 +5819,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
     </section>
 
