@@ -550,46 +550,44 @@ img {
     position: relative;
     z-index: 4;
 }
-
-/* .newsletter__right{
-     background: url(../images/right.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.newsletter__right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.newsletter__right{
     position: absolute;
-    top: -2rem;
+    top: -17rem;
     right: -1rem;
     width: 918px;
-    height: 612px;
-} */
+}
 .newsletter__bg{
     background-image: url(../images/left.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    width: 497px;
+    width: 795px;
     height: 497px;
     bottom: -3rem;
     left: 0px;
     z-index: 1;
-
 }
-/* .tabs__button{
-    width: 180px;
-} */
+
 .newsletter__tabs{
     display: flex;
     justify-content: flex-start !important;
     align-items: initial;
     margin-inline: unset !important;
     height: unset !important;
-    border-radius: 0px 20px 0 20px;
+    border-radius: 20px 20px 0 0px;
     width: 531px;
     z-index: 3;
     position: relative;
+
+    background-color: #e1d6c2;
 }
-.newsletter__tabs::after{
+/* .newsletter__tabs::after{
     content: "";
     position: absolute;
     background: #e1d6c2;
@@ -597,7 +595,7 @@ img {
     z-index: 1;
     height: 65px;
     border-radius:  20px 20px 0px 0px !important;
-}
+} */
 /* a#pills-profile-tab\ active-2:before {
     content: "";
     left: -30px;
@@ -648,8 +646,8 @@ a#pills-profile-tab\ active-3:after {
 .readings__arrow{
     position: absolute;
     right: 1rem;
-    top: 0.5rem;
-    font-size: 20px;
+    top: 0.6rem;
+    font-size: 23px;
     transition: transform 0.3s;
 }
 i.ri-arrow-down-s-line.readings__arrow:focus {
@@ -684,7 +682,7 @@ button#pills-home-tab {
 }
 .tabs__main {
     /* background: linear-gradient(#f7f5ec, #fef5e3); */
-    background: #f7f5ec;
+    background: #fefaef;
     backdrop-filter: blur(80px);
     box-shadow: 0px 10px 40px 0px #6868681A;
     border-radius:  0px 20px 20px 20px !important;
@@ -791,8 +789,8 @@ button#pills-home-tab {
 }
 @media screen and (min-width: 650px) {
     .newsletter__button {
-        width: 176px;
-        padding: 0.8rem 22px 0.8rem 0px;
+        width: 177px;
+        padding: 0.8rem 0px;
     }
 }   
 
@@ -1250,7 +1248,7 @@ li.nav-item.classname__active-3 {
         position: absolute;
         left: 0;
         height: 918px;
-        width: 612px;
+        width: 627px;
     }
 }
 
@@ -1501,17 +1499,17 @@ li.nav-item.classname__active-3 {
 
 /*  READINGS */
 .readings  {
-    padding-top: 3rem;
     position: relative;
     background-image: url(../images/readings__bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+    backdrop-filter: blur(84px);
 }
 
 .readings__list{
-    backdrop-filter: blur(100px);
+    /* backdrop-filter: blur(100px); */
     border: 2px solid #FFFFFFCC;
     border-radius: 20px;
     padding: 2rem 0rem 1rem 0rem;
@@ -1520,6 +1518,7 @@ li.nav-item.classname__active-3 {
 .readings-data{
     /* height: 400px; */
     height: 330px;
+    /* height: 277px; */
     overflow-y: auto;
     width: 100%;
     margin: 0 auto;
@@ -1545,9 +1544,17 @@ li.nav-item.classname__active-3 {
     background: #fff;
     border-radius: 20px;
 }
+@media screen and (min-width: 1024px) {
+    .card-body{
+        padding: 1.307rem;
+    }
+}
+
 .card-title {
     font-weight: bold;
 }
+
+
 
 .category__bg {
     position: absolute;
@@ -1730,43 +1737,60 @@ li.nav-item.classname__active-3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
 }
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (max-width: 1023.98px) {
+    .meaningful__message {
+        border-top: 1px solid #fff;
+    }
+    .meaningfull__message__bg{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .meaningful__message{
+        border-top: unset;
+    }
     .meaningful__message__bottom {
-        background-image: url(../images/bottom.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
     }
-} */
+}
 .meaningful__message-bg img{
+    width: 100%;
+}
+.meaningfull__message__bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.meaningfull__message__bg{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* height: 100%; */
+    width: 100%;
+}
+.meaningful__message-brick {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.meaningful__message-brick img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.meaningfull__message__bg{
-    background-image: url(../images/meaningful__message.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 100%;
-    width: 100%;
 
-}
 @media screen and (max-width: 1023.98px) {
-    .meaningful__message__bg img{
+    .meaningful__message__bg{
         background-size: cover;
         z-index: -1;
         position: absolute;
@@ -1775,10 +1799,17 @@ li.nav-item.classname__active-3 {
         height: 800px;
     }
     .meaningful__message-bg img{
-        display: none;
+        /* display: none; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
-
+.meaningful__message__bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 @media screen and (min-width: 1024px) {
     .meaningful__message__bg img{
@@ -1791,6 +1822,9 @@ li.nav-item.classname__active-3 {
         top: -4rem;
         right: -4rem;
         z-index: 1;
+    }
+    .meaningful__message__bg{
+        display: none;
     }
 }
 
@@ -1820,6 +1854,12 @@ li.nav-item.classname__active-3 {
     position: relative;
     z-index: 4;
 }
+.meaningful__message-more img{
+    transition: transform .3s;
+}
+.meaningful__message-more img:hover{
+    transform: translateX(0.25rem);
+}   
 .meaningful-line{
     position: relative;
     z-index: 4;
@@ -1838,14 +1878,6 @@ li.nav-item.classname__active-3 {
 .meaningful__message-article:nth-child(5){
     justify-self: center; 
 }
-
-/* .meaningful__message-item > .child:nth-child(4) {
-    grid-column: span 2;
-  }
-.meaningful__message-item > .child:nth-child(4),
-.meaningful__message-item > .child:nth-child(5) {
-  justify-self: center; 
-} */
 
 
 
@@ -1931,6 +1963,8 @@ li.nav-item.classname__active-3 {
     background-size: cover;
     background-color: #fcf5e0;
     padding: 2rem 0 3rem;
+    position: relative;
+    z-index: 4;
 }
 
 .health__image{
@@ -1996,11 +2030,6 @@ li.nav-item.classname__active-3 {
     right: 4rem;
 }
 
-/* .featured-author {
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 49.5%, rgba(255, 255, 255, 0) 100%);
-
-} */
-
 
 .swiper.featured-author__swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
     padding-top: 2.5rem;
@@ -2012,7 +2041,7 @@ li.nav-item.classname__active-3 {
     font-weight: 700;
     font-family: var(--body-font);
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 .good__book-list{
     position: relative;
@@ -2081,12 +2110,6 @@ li.nav-item.classname__active-3 {
 
 .footer__main{
     border-bottom: 1px solid #d5c8b1;
-
-    /* display:flex; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-
 }
 .footer__logo{
     width: 158px;
@@ -2102,20 +2125,12 @@ li.nav-item.classname__active-3 {
 }
 
 
-/* .footer__data {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #d5c8b1;
-    width: 100%;
-} */
 .footer__social {
     display: flex;
     column-gap: 20px;
-    /* justify-content: center; */
     margin-top: 1.25rem;
 }
-/* .footer__main {
-    padding-bottom: 2rem;
-} */
+
 .footer__social-link{
     color: #776f63;
     font-size: 32px;
@@ -2512,7 +2527,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media screen and (max-width: 1260px) {
     .meaningful__message-bg {
         height: 100%;
-      /* display: none; */
+      display: none;
       top: 23rem;
       right: -8rem;
       rotate: 0deg;
@@ -2533,7 +2548,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .featured-article__main,
     .featured-article__image {
         height: 100%;
-
     }
 
 
@@ -2910,10 +2924,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         height: 344px;
         right: -1rem;
     }
-    /* .swiper.category__swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.swiper-grid.swiper-grid-column {
-        height: 700px;
-    } */
-   
 }
 @media screen and (min-width: 1260px) {
     .container{
@@ -3019,6 +3029,11 @@ a#pills-contact-tab\ active-3.active {
     border-bottom: unset !important;
     color:#000;
     background: #fffaef;
+    backdrop-filter: blur(80px);
+    box-shadow: 0px 10px 40px 0px #6868681A;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 
 }
 a#pills-contact-tab\ active-3.active::before{
@@ -3048,10 +3063,6 @@ a#pills-contact-tab\ active-3.active::after{
     box-shadow: 0px 10px 40px 0px #6868681A;
 
 }
-.newsletter__button {
-    width: 180px;
-}
-
 
 
 div#pills-tabContent::after {
@@ -3061,4 +3072,5 @@ div#pills-tabContent::after {
     height: 3px;
     top: 3rem;
     left: 1rem;
+    background-color: #fefaef;
 }

@@ -119,6 +119,7 @@ let swiperCategory = new Swiper('.category__swiper', {
    breakpoints: {
       300: {
           slidesPerView: 1.2,
+          spaceBetween: 14,
           grid: {
             rows: 1,
           }
@@ -135,9 +136,19 @@ let swiperCategory = new Swiper('.category__swiper', {
           rows: 1,
         }
       },
+
+      575: {
+        spaceBetween: 17,
+      },
+      768: {
+        spaceBetween: 20,
+      },
       950: {
         slidesPerView: 3,
        
+      },
+      1024: {
+        spaceBetween: 24,
       },
      
       1150: {
@@ -165,6 +176,7 @@ navigation: {
 breakpoints: {
   300: {
     slidesPerView: 1.5,
+    spaceBetween: 14,
 
   },
   360: {
@@ -176,18 +188,22 @@ breakpoints: {
   },
   575: {
     slidesPerView: 2.5,
+    spaceBetween: 17,
   },
   700: {
     slidesPerView: 3,
   },
   800: {
     slidesPerView: 3.5,
+    spaceBetween: 20,
   },
   900: {
     slidesPerView: 4,
+
   },
   1024: {
     slidesPerView: 5,
+    spaceBetween: 24,
   },
   1220: {
       slidesPerView: 6,
@@ -200,30 +216,54 @@ let swiperMeaningful__message = new Swiper('.meaningful__message-swiper', {
 loop: true,
 spaceBetween: 30,
 
-navigation: {
-    nextEl: '.swiper-button-next__meaningful',
-    prevEl: '.swiper-button-prev__meaningful',
-},
-slidesPerView: 1,
+  navigation: {
+      nextEl: '.swiper-button-next__meaningful',
+      prevEl: '.swiper-button-prev__meaningful',
+  },
 
+  slidesPerView: 1,
+
+  breakpoints: {
+    300: {
+      spaceBetween: 14,
+    },
+    575: {
+      spaceBetween: 17,
+    },
+    768: {
+      spaceBetween: 20,
+    },
+    1024: {
+      spaceBetween: 24,
+    },
+    
+  },
 });
+
+
 let swiperMeaningful__swiper = new Swiper('.meaningful-swiper ', {
 loop: true,
 spaceBetween: 24,
 slidesPerView: 'auto',
 centeredSlides: 'auto',
 
-navigation: {
-    nextEl: '.swiper-button-next__meaningful__message',
-    prevEl: '.swiper-button-prev__meaningful__message',
-},
+  navigation: {
+      nextEl: '.swiper-button-next__meaningful__message',
+      prevEl: '.swiper-button-prev__meaningful__message',
+  },
 
-breakpoints: {
-    1150: {
-        slidesPerView: 3,
-        centeredSlides: false,
-    }
-}
+  breakpoints: {
+    300: {
+      spaceBetween: 14,
+    },
+    1024: {
+      spaceBetween: 24,
+    },
+      1150: {
+          slidesPerView: 3,
+          centeredSlides: false,
+      }
+  }
 });
 
 
@@ -240,6 +280,14 @@ navigation: {
 },
 
 breakpoints: {
+    300: {
+      spaceBetween: 14,
+    },
+    1024: {
+      spaceBetween: 24,
+    },
+
+
     1150: {
         slidesPerView: 4,
         centeredSlides: false,
