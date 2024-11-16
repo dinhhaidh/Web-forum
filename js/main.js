@@ -289,6 +289,7 @@ breakpoints: {
 
 
     1150: {
+        spaceBetween: 24,
         slidesPerView: 4,
         centeredSlides: false,
     }
