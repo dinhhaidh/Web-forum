@@ -3259,10 +3259,17 @@ a#pills-contact-tab\ active-3 {
         width: unset !important;
     }
 }
-
+@media screen and (max-width: 580px) {
+    .tabs__main{
+        border-top: unset !important;
+    }
+}
 @media screen and (min-width: 1024px) {
     .readings__link{
         width: 176px !important;
+    }
+    .readings__tabs {
+        column-gap: 15px;
     }
 }
 @media screen and (min-width: 1260px) {
@@ -3292,8 +3299,4 @@ a#pills-contact-tab\ active-3 {
 
 
 
-@media screen and (max-width: 580px) {
-    .tabs__main{
-        border-top: unset !important;
-    }
-}
+
