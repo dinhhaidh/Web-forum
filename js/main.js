@@ -387,3 +387,12 @@ sr.reveal(`.newsletter__list,.featured-article-content,.featured__article-conten
 sr.reveal(`.readings-card`, {interval: 100}) 
 sr.reveal(`.blog__img,.blog__imag`,{origin: 'right'})
 sr.reveal(`.blog__data`,{origin: 'left'})
+
+// Custom tabs
+// jQuery( document ).ready( function(){
+//   jQuery('#pills-tab li.nav-item').on('click',function(){
+//     jQuery('#pills-tab li.nav-item').removeClass('active');
+//     jQuery(this).addClass('active');
+//     return false;
+//   })
+// })
