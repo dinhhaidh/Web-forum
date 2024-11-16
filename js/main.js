@@ -190,12 +190,13 @@ breakpoints: {
     slidesPerView: 2.5,
     spaceBetween: 17,
   },
-  700: {
+  768: {
     slidesPerView: 3,
+    spaceBetween: 20,
   },
+
   800: {
     slidesPerView: 3.5,
-    spaceBetween: 20,
   },
   900: {
     slidesPerView: 4,
@@ -210,6 +211,7 @@ breakpoints: {
   }
 }
 });
+
 
 
 let swiperMeaningful__message = new Swiper('.meaningful__message-swiper', {
@@ -256,6 +258,12 @@ centeredSlides: 'auto',
     300: {
       spaceBetween: 14,
     },
+    575: {
+      spaceBetween: 17,
+    },
+    768: {
+      spaceBetween: 20,
+    },
     1024: {
       spaceBetween: 24,
     },
@@ -264,6 +272,7 @@ centeredSlides: 'auto',
           centeredSlides: false,
       }
   }
+
 });
 
 
@@ -280,12 +289,18 @@ navigation: {
 },
 
 breakpoints: {
-    300: {
-      spaceBetween: 14,
-    },
-    1024: {
-      spaceBetween: 24,
-    },
+  300: {
+    spaceBetween: 14,
+  },
+  575: {
+    spaceBetween: 17,
+  },
+  768: {
+    spaceBetween: 20,
+  },
+  1024: {
+    spaceBetween: 24,
+  },
 
 
     1150: {
@@ -308,10 +323,25 @@ navigation: {
 },
 
 breakpoints: {
-    1150: {
-        slidesPerView: 4,
-        centeredSlides: false,
-    }
+  300: {
+    spaceBetween: 14,
+  },
+  575: {
+    spaceBetween: 17,
+  },
+  768: {
+    spaceBetween: 20,
+  },
+  1024: {
+    spaceBetween: 24,
+  },
+
+
+  1150: {
+      spaceBetween: 24,
+      slidesPerView: 4,
+      centeredSlides: false,
+  }
 }
 });
 
