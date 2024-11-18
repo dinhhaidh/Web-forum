@@ -135,8 +135,7 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     backdrop-filter: blur(15px);
-    background-color: transparent;
-    transition: background-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 
@@ -432,7 +431,7 @@ img {
     }
 }
     #header.scrolled {
-        background: #FFFFFF0D;
+        background: linear-gradient(to right, rgba(252, 247, 228, 0.4) 0%, rgba(239, 239, 239, 0.4) 50%, rgba(252, 247, 228, 0.4) 100%);
         backdrop-filter: blur(15px);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.051);
     }
@@ -3058,27 +3057,31 @@ a#pills-home-tab\ active-1.active::after{
 a#pills-profile-tab\ active-2.active::before{
     content: "";
     left: -41px;
-    bottom: -1px;
-    height: 40px;
-    width: 40px;
+    bottom: 1px;
+    height: 45px;
+    width: 45px;
     position: absolute;
     border-radius: 50%;
-    box-shadow: 15px 15px 0 #fffaef;
+    box-shadow: 17px 15px 0 #fffaef;
     background: transparent;
     outline: none !important;
+
+
+    
 }
-a#pills-profile-tab\ active-2.active::after{
+a#pills-profile-tab\ active-2.active::after {
     content: "";
-    right: -41px;
-    bottom: -1px;
-    height: 40px;
-    width: 40px;
+    right: -46.8px;
+    bottom: 1.25px;
+    height: 45px;
+    width: 45px;
     position: absolute;
     border-radius: 50%;
-    box-shadow: -15px 15px 0 #fffaef;
-    background: transparent;
+    box-shadow: #fffaef -16.1px 18px 0px;
     outline: none !important;
 }
+
+
 a#pills-contact-tab\ active-3.active {
     border-radius: 20px 18px 0 0;
     border: 2px solid #fff !important;
