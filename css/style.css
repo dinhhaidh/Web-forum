@@ -431,7 +431,7 @@ img {
     }
 }
     #header.scrolled {
-        background: linear-gradient(to right, rgba(252, 247, 228, 0.4) 0%, rgba(239, 239, 239, 0.4) 50%, rgba(252, 247, 228, 0.4) 100%);
+        background: linear-gradient(to right, rgba(252, 247, 228, 0.3) 0%, rgba(239, 239, 239, 0.3) 50%, rgba(252, 247, 228, 0.3) 100%);
         backdrop-filter: blur(15px);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.051);
     }
@@ -3039,46 +3039,46 @@ a#pills-home-tab\ active-1.active{
 }
 
 a#pills-home-tab\ active-1.active::after{
-    right: -41px;
-    bottom: -1px;
-    height: 40px;
-    width: 40px;
     content: "";
-    /* right: -50.1px;
-    bottom: -1px;
-    height: 50px;
-    width: 50px; */
+    right: -57px;
+    bottom: 2px;
+    height: 58px;
+    width: 50px;
     position: absolute;
-    border-radius: 50%;
-    box-shadow: -15px 15px 0 #fffaef;
-    background: transparent;
+    box-shadow: #fffaef -39.1px 9px 0px;
     outline: none !important;
+    rotate: -24deg;
+    border-radius: 0 0 20px 23px;
+    z-index: -1;
 }
 a#pills-profile-tab\ active-2.active::before{
     content: "";
-    left: -41px;
-    bottom: 1px;
-    height: 45px;
-    width: 45px;
+    left: -56px;
+    bottom: 2px;
+    height: 50px;
+    width: 50px;
     position: absolute;
-    border-radius: 50%;
-    box-shadow: 17px 15px 0 #fffaef;
+    box-shadow: 27px 2px 0 #fffaef;
     background: transparent;
     outline: none !important;
-
-
-    
+    rotate: 24deg;
+    border-radius: 0 0 26px 20px;
+    z-index: -1;
+    /* border-right: 2px solid #fff; */
 }
 a#pills-profile-tab\ active-2.active::after {
     content: "";
-    right: -46.8px;
-    bottom: 1.25px;
-    height: 45px;
-    width: 45px;
+    right: -55.8px;
+    bottom: 2px;
+    height: 50px;
+    width: 50px;
     position: absolute;
-    border-radius: 50%;
-    box-shadow: #fffaef -16.1px 18px 0px;
+    box-shadow: #fffaef -34.1px 9px 0px;
     outline: none !important;
+    /* background: red; */
+    rotate: -24deg;
+    border-radius: 0 0 20px 25px;
+    z-index: -1;
 }
 
 
@@ -3088,49 +3088,40 @@ a#pills-contact-tab\ active-3.active {
     border-bottom: unset !important;
     color:#000;
     background: #fffaef;
-    backdrop-filter: blur(80px);
     box-shadow: 0px 10px 40px 0px #6868681A;
     display:flex;
     align-items: center;
     justify-content: center;
     outline: none !important;
 }
+
 a#pills-contact-tab\ active-3.active::before{
     content: "";
-    left: -40.4px;
-    bottom: -1px;
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 #fffaef;
-    background: transparent;
-    outline: none !important;
-    border-bottom: unset !important;
-}
-a#pills-contact-tab\ active-3.active::after{
-    /* content: "";
-    right: -50px;
-    bottom: -1px;
-    height: 50px;
+    left: -56px;
+    bottom: 2px;
+    height: 51px;
     width: 50px;
     position: absolute;
-    border-radius: 50%;
-    box-shadow: -15px 15px 0 #fffaef;
+    box-shadow: 27px 2px 0 #fffaef;
     background: transparent;
-    outline: none !important; */
+    outline: none !important;
+    rotate: 24deg;
+    border-radius: 0 0 26px 20px;
+    z-index: -1;
+    /* border-right: 2px solid #fff; */
+}
 
+a#pills-contact-tab\ active-3.active::after{
     content: "";
-    right: -40.4px;
-    bottom: -1px;
+    right: -42.4px;
+    bottom: 3px;
     height: 40px;
     width: 40px;
     position: absolute;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 #fffaef;
+    box-shadow: -20px 18px 0 #fffaef;
     background: transparent;
     outline: none !important;
-    border-bottom: unset !important;
+    border-radius: 0 0 20px 18px;
 }
 
 /* a#pills-profile-tab\ active-2.active::after {
@@ -3300,6 +3291,11 @@ a#pills-contact-tab\ active-3 {
     }
 }
 
+@media screen and (min-width: 610px) {
+    .newsletter-content{
+        width: 550px;
+    }
+}
 
 
 
