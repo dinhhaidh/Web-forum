@@ -1602,7 +1602,7 @@ li.nav-item.classname__active-3 {
 }
 .readings-data{
     /* height: 400px; */
-    height: 338px;
+    height: 339px;
     /* height: 277px; */
     overflow-y: auto;
     width: 100%;
@@ -3639,3 +3639,8 @@ a#pills-contact-tab\ active-3 {
     }
 }
 
+@media screen and (min-width: 1920px) {
+    body{
+        transform: scale(1.1);
+    }
+}
