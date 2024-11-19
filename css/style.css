@@ -3639,7 +3639,8 @@ a#pills-contact-tab\ active-3 {
         transform-origin: top center;
         overflow-x: hidden;
     }
-    .menu{
+    .menu,
+    header{
         transform: none;
     }
 }
