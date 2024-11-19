@@ -98,10 +98,19 @@ img {
     padding-left: 0px;
     padding-right: 0px;
 }
+
 .container-1{
     max-width: 1390px;
     margin-inline:  1rem;
 }
+@media screen and (min-width: 1440px) {
+    .container__fluid{
+        max-width: 1440px;
+        padding: 0  1.5rem;
+        margin: 0 auto !important;
+    }
+}
+
 
 .title{
     font-size: clamp(3.625rem, 2.638157894736842rem + 4.934210526315789vw, 7.375rem);
@@ -453,7 +462,7 @@ i.ri-search-line.search,
     }
 }
     #header.scrolled {
-        background: linear-gradient(to right, rgba(252, 247, 228, 0.2) 0%, rgba(239, 239, 239, 0.2) 50%, rgba(252, 247, 228, 0.2) 100%);
+        background: linear-gradient(to right, rgba(252, 247, 228, 0.1) 0%, rgba(239, 239, 239, 0.1) 50%, rgba(252, 247, 228, 0.1) 100%);
         backdrop-filter: blur(15px);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.051);
     }
@@ -1593,7 +1602,7 @@ li.nav-item.classname__active-3 {
 }
 .readings-data{
     /* height: 400px; */
-    height: 335px;
+    height: 338px;
     /* height: 277px; */
     overflow-y: auto;
     width: 100%;
@@ -3067,6 +3076,7 @@ a#pills-profile-tab\ active-2.active {
     box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1), 
     10px 0px 40px 0px rgba(104, 104, 104, 0.1), 
    -10px 0px 40px 0px rgba(104, 104, 104, 0.1);
+   z-index: 1;
 }
 a#pills-home-tab\ active-1.active{
     background: #fffaef;
@@ -3080,6 +3090,7 @@ a#pills-home-tab\ active-1.active{
     box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1), 
     10px 0px 40px 0px rgba(104, 104, 104, 0.1), 
    -10px 0px 40px 0px rgba(104, 104, 104, 0.1);
+   z-index: 1;
 }
 
 a#pills-home-tab\ active-1.active::after{
@@ -3182,7 +3193,7 @@ a#pills-contact-tab\ active-3.active {
     box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1), 
     10px 0px 40px 0px rgba(104, 104, 104, 0.1), 
    -10px 0px 40px 0px rgba(104, 104, 104, 0.1);
-    
+   z-index: 1;
 }
 
 a#pills-contact-tab\ active-3.active::before{
@@ -3615,7 +3626,7 @@ a#pills-contact-tab\ active-3 {
     a#pills-profile-tab\ active-2.active::before {
         box-shadow: 28px 1px 0 #fffaef;
         bottom: -2px;
-        left: -55.5px;
+        left: -55px;
         border-radius: 0 0 31px 0px;
     }
     a#pills-contact-tab\ active-3.active::after{
