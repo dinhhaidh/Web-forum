@@ -3635,7 +3635,7 @@ a#pills-contact-tab\ active-3 {
 
 @media screen and (min-width: 1920px) {
     .main,
-    .fotter {
+    .footer {
         transform: scale(1.1);
         transform-origin: top center;
         overflow-x: hidden;
