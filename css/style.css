@@ -3642,5 +3642,6 @@ a#pills-contact-tab\ active-3 {
 @media screen and (min-width: 1920px) {
     body{
         transform: scale(1.1);
+        transform-origin: top left;
     }
 }
