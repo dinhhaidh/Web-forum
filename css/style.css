@@ -3063,13 +3063,6 @@ a#pills-profile-tab\ active-2.active {
     /* border-bottom: unset !important; */
     border-radius: 20px 20px 0 0;
     color:#000;
-    outline: none !important;
-    box-shadow: 0px -10px 40px 0px #6868681A; /* Áp dụng shadow cho phía trên, trái và phải */
-    outline: 10px solid transparent; /* Tạo một outline trong suốt ở phía dưới */
-
-    box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1), 
-    10px 0px 40px 0px rgba(104, 104, 104, 0.1), 
-   -10px 0px 40px 0px rgba(104, 104, 104, 0.1);
    z-index: 1;
 }
 a#pills-home-tab\ active-1.active{
@@ -3081,9 +3074,8 @@ a#pills-home-tab\ active-1.active{
     box-shadow: 0px -10px 40px 0px #6868681A; /* Áp dụng shadow cho phía trên, trái và phải */
     outline: 10px solid transparent; /* Tạo một outline trong suốt ở phía dưới */
 
-    box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1), 
-    10px 0px 40px 0px rgba(104, 104, 104, 0.1), 
-   -10px 0px 40px 0px rgba(104, 104, 104, 0.1);
+   box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1), -10px 0px 40px 0px rgba(104, 104, 104, 0.1);
+
    z-index: 1;
 }
 
@@ -3183,11 +3175,9 @@ a#pills-contact-tab\ active-3.active {
     display:flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1);
 
-    box-shadow: 0px -10px 40px 0px rgba(104, 104, 104, 0.1), 
-    10px 0px 40px 0px rgba(104, 104, 104, 0.1), 
-   -10px 0px 40px 0px rgba(104, 104, 104, 0.1);
-   z-index: 1;
+    z-index: 1;
 }
 
 a#pills-contact-tab\ active-3.active::before{
@@ -3425,8 +3415,8 @@ a#pills-contact-tab\ active-3 {
         border-radius: 0 0 25px 31px;
     }
     a#pills-profile-tab\ active-2.active::before {
+        left: -56.5px;
         content: "";
-        left: -57px;
         bottom: 0px;
         height: 65px;
         width: 50px;
@@ -3438,26 +3428,12 @@ a#pills-contact-tab\ active-3 {
         border-radius: 0 0 24px 20px;
         z-index: -1;
     }
-    a#pills-profile-tab\ active-2.active::after {
-        content: "";
-        bottom: 1px;
-        width: 50px;
-        position: absolute;
-        box-shadow: #fffaef -34.1px 9px 0px;
-        outline: none !important;
-        rotate: -13deg;
-        z-index: -1;
-        right: -55.8px;
-        border-radius: 0 0 20px 25px;
-        height: 67px;
-        bottom: -1px;
-        right: -54px;
-    }
+   
     a#pills-contact-tab\ active-3.active::before {
         content: "";
         z-index: -1;
         left: -97px;
-        left: -56px;
+        left: -55.9px;
         height: 64px;
         width: 50px;
         position: absolute;
@@ -3476,6 +3452,21 @@ a#pills-contact-tab\ active-3 {
         box-shadow: 0px 10px 11px 0px rgba(104, 104, 104, 0.1);
         overflow: hidden;
     }
+    a#pills-profile-tab\ active-2.active::after {
+        content: "";
+        bottom: 1px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -34.1px 9px 0px;
+        outline: none !important;
+        rotate: -13deg;
+        z-index: -1;
+        right: -55.8px;
+        border-radius: 0 0 20px 25px;
+        height: 66px;
+        bottom: -1px;
+        right: -54px;
+    }
     
 }
 @media screen and (min-width: 350px) {
@@ -3484,9 +3475,24 @@ a#pills-contact-tab\ active-3 {
         border-radius: 0 0 27px 20px;
         bottom: -1px;
     }
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -56.5px;
+        bottom: -2px;
+        height: 73px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -33.1px 9px 0px;
+        outline: none !important;
+        rotate: -16deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 25px 34px;
+    }
+        
    
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 370px) {
     a#pills-home-tab\ active-1.active::after {
         content: "";
         right: -54px;
@@ -3503,16 +3509,118 @@ a#pills-contact-tab\ active-3 {
     .newsletter__button {
         padding: 0.8rem 15px;
     }
-  
+    a#pills-contact-tab\ active-3.active::before {
+        content: "";
+        z-index: -1;
+        left: -97px;
+        left: -56.3px;
+        height: 64px;
+        width: 50px;
+        position: absolute;
+        box-shadow: 21px 2px 0 #fffaef;
+        background: transparent;
+        outline: none !important;
+        rotate: 16deg;
+        border-radius: 0 0 30px 20px;
+        bottom: -2px;
+    }
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -53.8px;
+        bottom: 0px;
+        height: 66px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -33.1px 9px 0px;
+        outline: none !important;
+        rotate: -10deg;
+        z-index: -1;
+        border-radius: 0 0 9px 22px;
+    }
+    a#pills-profile-tab\ active-2.active::after {
+        content: "";
+        bottom: 1px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -27.1px 9px 0px;
+        outline: none !important;
+        rotate: -13deg;
+        z-index: -1;
+        right: -55.8px;
+        border-radius: 0 0 20px 31px;
+        height: 66px;
+        bottom: -1px;
+        right: -54px;
+    }
 }
+@media screen and (min-width: 390px) {
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -54px;
+        bottom: 0px;
+        height: 66px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -33.1px 9px 0px;
+        outline: none !important;
+        rotate: -10deg;
+        z-index: -1;
+        border-radius: 0 0 9px 25px;
+    }
+}
+@media screen and (min-width: 400px) {
+    a#pills-profile-tab\ active-2.active::after {
+        height: 65px;
+        bottom: -1px;
+        right: -54px;
+    }
+    a#pills-profile-tab\ active-2.active::before {
+        border-radius: 0 0 27px 20px;
+        bottom: -1px;
+        left: -57px;
+    }
+   
+    a#pills-home-tab\ active-1.active::after {
+        right: -53.1px;
+        height: 67px;
+    }
+    a#pills-contact-tab\ active-3.active::before {
+        left: -56px;
+    }
+}
+
 
 @media screen and (min-width: 450px) {
     .tabs__main {
         padding: 1rem 1.5rem;
         margin-top: 0px !important;
     }
+    a#pills-home-tab\ active-1.active::after {
+        right: -53.9px;
+        height: 66px;
+    }
+    a#pills-profile-tab\ active-2.active::before {
+        left: -57.5px;
+        border-radius: 0 0 27px 20px;
+        bottom: -1px;
+    }
 }
 
+@media screen and (min-width: 480px) {
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -54px;
+        bottom: 0px;
+        height: 66px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -33.1px 9px 0px;
+        outline: none !important;
+        rotate: -11deg;
+        z-index: -1;
+        border-radius: 0 0 9px 25px;
+    }
+}
 @media screen and (min-width: 500px) {
     .newsletter__button {
         padding: 0.8rem 10px;
@@ -3540,7 +3648,7 @@ a#pills-contact-tab\ active-3 {
         height: 51px;
         width: 50px;
         position: absolute;
-        box-shadow: 27px 1px 0 #fffaef;
+        box-shadow: 33px 1px 0 #fffaef;
         background: transparent;
         outline: none !important;
         rotate: 21deg;
@@ -3555,17 +3663,17 @@ a#pills-contact-tab\ active-3 {
         position: absolute;
         box-shadow: #fffaef -34.1px 9px 0px;
         outline: none !important;
-        rotate: -24deg;
+        rotate: -20deg;
         z-index: -1;
         right: -55.8px;
         border-radius: 0 0 20px 27px;
-        height: 51px;
+        height: 53px;
         bottom: -1px;
-        right: -55px;
+        right: -53px;
     }
     a#pills-contact-tab\ active-3.active::before {
         content: "";
-        left: -55px;
+        left: -56px;
         bottom: -1px;
         height: 56px;
         width: 50px;
@@ -3573,6 +3681,15 @@ a#pills-contact-tab\ active-3 {
         box-shadow: 37px 2px 0 #fffaef;
         rotate: 28deg;
         border-radius: 0 0 28px 0px;
+    }
+}
+
+@media screen and (min-width: 506px) {
+    a#pills-profile-tab\ active-2.active::after {
+        box-shadow: #fffaef -34.1px 9px 0px;
+        right: -52.8px;
+        bottom: -1px;
+        height: 55px;
     }
 }
 @media screen and (min-width: 510px) {
@@ -3586,9 +3703,9 @@ a#pills-contact-tab\ active-3 {
     }
     a#pills-profile-tab\ active-2.active::after {
         box-shadow: #fffaef -34.1px 9px 0px;
-        right: -54.8px;
+        right: -53.3px;
         bottom: -1px;
-        height: 53px;
+        height: 55px;
     }
     a#pills-contact-tab\ active-3.active::before {
         left: -56px;
@@ -3596,6 +3713,72 @@ a#pills-contact-tab\ active-3 {
         height: 56px;
     }
 }
+@media screen and (min-width: 525px) {
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -53.4px;
+        bottom: 2px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -37.1px 8px 0px;
+        outline: none !important;
+        rotate: -15deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 12px 18px;
+    }
+}
+@media screen and (min-width: 540px) {
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -53.5px;
+        bottom: 2px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -37.1px 8px 0px;
+        outline: none !important;
+        rotate: -15deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 12px 18px;
+    }
+}
+@media screen and (min-width: 559px) {
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -52px;
+        bottom: 2px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -37.1px 8px 0px;
+        outline: none !important;
+        rotate: -15deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 12px 18px;
+    }
+}
+
+@media screen and (min-width: 587px) {
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -52.7px;
+        bottom: 2px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -37.1px 8px 0px;
+        outline: none !important;
+        rotate: -15deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 12px 18px;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .newsletter__tabs{
         overflow: unset;
@@ -3606,6 +3789,95 @@ a#pills-contact-tab\ active-3 {
         height: 40px;
     }
   
+}
+@media screen and (min-width: 625px) {
+    a#pills-profile-tab\ active-2.active::before {
+        content: "";
+        left: -54.5px;
+        bottom: -1px;
+        box-shadow: 27px 1px 0 #fffaef;
+        rotate: 21deg;
+        border-radius: 0 0 29px 0px;
+    }
+}
+@media screen and (min-width: 635px) {
+   
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -52.5px;
+        bottom: 2px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -37.1px 8px 0px;
+        outline: none !important;
+        rotate: -15deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 12px 18px;
+    }
+}
+@media screen and (min-width: 670px) {
+    a#pills-profile-tab\ active-2.active::before {
+        content: "";
+        left: -54.2px;
+        bottom: -1px;
+        box-shadow: 32px 1px 0 #fffaef;
+        rotate: 21deg;
+        border-radius: 0 0 29px 0px;
+    }
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -52.5px;
+        bottom: 1.25px;
+        height: 52px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -37.1px 8px 0px;
+        outline: none !important;
+        rotate: -15deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 12px 18px;
+    }
+}
+@media screen and (min-width: 675px) {
+    a#pills-home-tab\ active-1.active::after {
+        content: "";
+        right: -52.8px;
+        bottom: 1.25px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        box-shadow: #fffaef -37.1px 8px 0px;
+        outline: none !important;
+        rotate: -15deg;
+        /* border-radius: 0 0 20px 23px; */
+        z-index: -1;
+        border-radius: 0 0 12px 18px;
+    }
+    a#pills-profile-tab\ active-2.active::before {
+        content: "";
+        left: -55px;
+        bottom: -1px;
+        box-shadow: 32px 1px 0 #fffaef;
+        rotate: 21deg;
+        border-radius: 0 0 29px 0px;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    a#pills-contact-tab\ active-3.active {
+        box-shadow: none;
+    }
+    a#pills-profile-tab\ active-2.active {
+       box-shadow: none;
+    }
+
+    a#pills-home-tab\ active-1.active {
+        box-shadow: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -3621,7 +3893,7 @@ a#pills-contact-tab\ active-3 {
         box-shadow: 28px 1px 0 #fffaef;
         bottom: -2px;
         left: -55px;
-        border-radius: 0 0 31px 0px;
+        border-radius: 0 0 33px 5px;
     }
     a#pills-contact-tab\ active-3.active::after{
         right: -40.4px;
