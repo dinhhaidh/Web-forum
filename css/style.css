@@ -466,7 +466,6 @@ i.ri-search-line.search,
     }
     #header.scrolled .nav__input{
         color: #000 !important;
-        border: 1px solid #00000066;
     }
     
     #header.scrolled .nav__input::placeholder{
@@ -3904,6 +3903,12 @@ a#pills-contact-tab\ active-3 {
         padding: 1rem 3rem;
     }
 }
+@media screen and (max-width: 1023.98px) {
+    .nav__input{
+        border: none;
+    }
+}
+
 
 @media screen and (min-width: 1920px) {
     .main,
@@ -3913,4 +3918,10 @@ a#pills-contact-tab\ active-3 {
         overflow-x: hidden;
     }
   
+}
+
+@media screen and (min-width: 1024px) {
+    #header.scrolled .nav__input {
+        border:  1px solid #000;
+    }
 }
