@@ -218,7 +218,7 @@ img {
     padding: 5px 10px 8px 40px;
     border-radius: 16px;
     background: fixed;
-    border: 1px solid #FFFFFF66;
+  
     height: 40px;
     display: none;
     color: #fff !important;
@@ -3921,6 +3921,9 @@ a#pills-contact-tab\ active-3 {
 }
 
 @media screen and (min-width: 1024px) {
+    .nav__input{
+        border: 1px solid #FFFFFF66;
+    }
     #header.scrolled .nav__input {
         border:  1px solid #000;
     }
